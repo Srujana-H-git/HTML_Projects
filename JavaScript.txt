@@ -1,0 +1,157 @@
+console.log("Hello World!!!"); // First basic js program
+
+Declaring variables                 //variables are case sensitive name and Name are different
+let age=18;                         //only letters, digits ,underscore and $ are allowed
+console.log("Age:",age);            // only a letter ,underscore or $ should be first character
+                                    Reserved words cannot be variables name
+
+
+let , const and var
+var: variable can be re-declared and updated . A global scope variable.
+let: variable cannot be re-declared but can be updated. A block scope variable.
+const:variable cannot be re-declared or updated. A block scope variable.
+
+var age = 16;
+var age = 18;                                    // CAN BE RE-DECLARED AND UPDATED
+var age = 20;
+console.log("age:",age);   // age: 20
+
+
+let age = 16;
+age = 18;                                          // CANNOT BE RE-DECLARED , BUT CAN BE UPDATED
+age = 20;
+console.log("age:",age);    //age:20
+
+const PI=3.14;
+console.log(PI);                                   //ONCE DECLARED CANNOT BE RE-DECLARED OR UPDATED
+
+DATA TYPES IN JS
+PRIMITIVE 
+number , string , boolean , undefined ,NULL, Bigint , Symbol
+NON-PRIMITIVE
+objects (arrays, functions)
+
+const Student {
+name: abc,
+usn : 12345,
+grade: 9.0,                      //OBJECT 
+isPass: True,
+};
+console.log(Student);
+
+Student.name=xyz;
+console.log(Student);
+
+OPERATORS IN JS
+
+1)Arithmetic Operators  : +-/* i] Modulus (remainder) ii] Exponential **  iii] Increment ++  iv] Decrement --
+let a=2;  let b=3;
+console.log(`a ${a} b ${b}`);
+console.log(`a+b ${a+b}`);
+console.log(`a-b ${a-b}`);
+console.log(`a*b ${a*b}`);
+console.log(`a/b ${a/b}`);
+
+Unary operators 
+let a=2;
+console.log("pre increment ",++a);     =3
+console.log("post increment",a++);     =3
+console.log("pre decrement",--a);      =3
+console.log("post decrement",a--);     =3
+
+Assignment operators  =, +=,-=,*=,/=,**=
+
+Comparison operator  (< , <=, >, >=)
+Equal to ==          equal to and type ===
+not Equal to !=      not equal to and type !==
+
+Logical operators
+AND &&     OR||     NOT !
+  
+Conditional Statements
+i] if statements          ii] if-else statements         iii] else-if statements
+
+Ternary operator
+condition? true output: false output;
+
+alert("Danger");     pop up
+
+Prompting examples 
+
+age=prompt("enter your age");
+console.log("age =",age);
+
+Loops in JS 
+i] for loop             for(initialization; condition; increment/decrement)
+ii] while loop          while(cond){}
+iii]do while            do{}while(cond);
+iv]for of loop          for(let i of arr){}
+v]for in loop           for(let key in objvar){}
+
+
+Strings in JS          #STRINGS ARE IMMUTABE      (until and unless the changes made in str are stored in a variale)
+Create string                 let str="abc";
+String length                  str.length
+String indices                 str[0],str[1],str[2]...
+String interpolation           (`str.....${expression}....str......`);
+Uppercase                      str.toUppercase()
+Lowercase                      str.toLowercase()
+Remove extra space             str.trim();
+Returns part of a string       str.slice(start,end?)
+cocatenation                   str1.concat(str2)
+replace                        str.replace(search var,new var)
+character of that index        str.charAt(idx)
+
+
+let fullName = prompt("enter your full name");
+console.log(`Username = @${fullName}${fullName.length}`);
+
+let num=[20 ,30 ,40 ,50]
+console.log(num);
+
+let fullName = "Srujana";
+console.log("fullname: ",fullName);
+
+Array in JS
+array is also a type of object in JS( special type of objects....here the keys are indices of array elements)
+
+let marks = [ 85,97,44,37,76,60];
+var sum=0;
+for(let i of marks)
+{
+    console.log(i)
+    sum=sum+i;
+}
+console.log(sum);
+var avg=0;
+avg=sum/marks.length;
+console.log("average:",avg);
+
+let price=[250,645,300,900,50];
+console.log(price);
+for(let i=0; i<price.length;i++)
+{
+    price[i]=price[i]-price[i]/10
+}
+console.log(price);
+
+function count_vowels(str){
+    let count=0
+    for(let i of str){
+        if(i==="a" || i==="e" || i==="i" ||i==="o" || i==="u"){
+            count++;
+        }
+    }
+    return(count);
+}
+
+count=count_vowels("srujana");
+console.log(count);
+
+let arr=[1,2,3,4,5,6]
+
+arr.forEach((num)=>
+{
+    console.log(num*num);
+
+})
