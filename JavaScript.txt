@@ -1,4 +1,4 @@
-console.log("Hello World!!!"); // First basic js program
+console.log("Hello World!!!"); //First Program
 
 Declaring variables                 //variables are case sensitive name and Name are different
 let age=18;                         //only letters, digits ,underscore and $ are allowed
