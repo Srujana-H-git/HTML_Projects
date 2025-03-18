@@ -155,3 +155,10 @@ arr.forEach((num)=>
     console.log(num*num);
 
 })
+
+DOM Manipulation
+properties:
+1)tagname
+2)inner text
+3)inner HTML
+4)textContent
