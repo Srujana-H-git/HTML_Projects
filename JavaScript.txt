@@ -162,3 +162,14 @@ properties:
 2)inner text
 3)inner HTML
 4)textContent
+
+//selecting by ID
+document.getElementById("my id");
+
+document.getElementsByClassName("myClass");
+
+document.getElementsByTagName("p");
+
+document.querySelector("") //returns first node
+
+document.querySelectorAll("") //returns node list
