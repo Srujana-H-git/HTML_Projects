@@ -6,6 +6,6 @@
 <!--     <title>HTML</title> -->
 </head>
 <body>
-    <h1>Work in Progress</h1>
+    <h1></h1>
 </body>
 </html>
