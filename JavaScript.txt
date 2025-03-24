@@ -173,3 +173,5 @@ document.getElementsByTagName("p");
 document.querySelector("") //returns first node
 
 document.querySelectorAll("") //returns node list
+
+//Events in JS
