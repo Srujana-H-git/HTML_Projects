@@ -175,3 +175,43 @@ document.querySelector("") //returns first node
 document.querySelectorAll("") //returns node list
 
 //Events in JS
+//To create a toggle button that goes to dark mode when light, and light mode when dark
+
+//html file
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="mode">Change Mode</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+//JS file
+let modebtn = document.querySelector("#mode");
+let currmode="light";
+
+
+modebtn.addEventListener("click", ()=>
+{
+    if(currmode==="light")
+    {
+        currmode="dark";
+        document.querySelector("body").style.backgroundColor="black";
+    }
+    else
+    {
+        currmode="light";
+        document.querySelector("body").style.backgroundColor="white";
+    }
+console.log(currmode);
+
+})
+
+
