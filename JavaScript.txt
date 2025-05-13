@@ -212,6 +212,13 @@ modebtn.addEventListener("click", ()=>
     }
 console.log(currmode);
 
+
+synchronous and asynchronous functions
+promise, rejection
+callback hell(pyramid of doom)
+
+
+
 })
 
 
